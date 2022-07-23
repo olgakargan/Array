@@ -28,7 +28,6 @@ public class Main {
         }
         System.out.print(ArrayBool[0]);
 
-
         for (int i = 0; i < ArrayInt.length; i++) {
             if (ArrayInt[i] % 2 != 0) ArrayInt[i]++;
             System.out.println(ArrayInt[i] + ' ');
