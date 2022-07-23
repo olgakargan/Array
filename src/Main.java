@@ -26,7 +26,7 @@ public class Main {
 
             counter--;
         }
-        System.out.println(ArrayBool[0]);
+        System.out.print(ArrayBool[0]);
 
 
         for (int i = 0; i < ArrayInt.length; i++) {
