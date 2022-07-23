@@ -6,59 +6,43 @@ public class Main {
 
 
         System.out.println("task #1");
-        int[] Array = new int[3];
-        Array[0] = 1;
-        Array[1] = 2;
-        Array[2] = 3;
-        System.out.println(Arrays.toString(Array));
+        int[] ArrayInt = new int[5];
+        ArrayInt[0] = -65;
+        ArrayInt[1] = 538;
+        ArrayInt[2] = 17;
+        ArrayInt[3] = 0;
+        ArrayInt[4] = 10;
 
-        for (int i = Array.length - 1; i >= 0; i--) {
-            System.out.print(Array[i] + ",");
-            System.out.print(Array[i]);
+        double[] ArrayDouble = {1.57, 7.654, 9.986};
+        boolean[] ArrayBool = {true, false, false, true,};
+        for (int i = 0; i < ArrayInt.length; i++) {
+            System.out.println(ArrayInt[i] + ",");
         }
-        System.out.println();
+        System.out.println(ArrayInt.length - 1);
 
+        int counter = ArrayBool.length - 1;
+        while (counter > 0) {
+            System.out.println(ArrayBool[counter] + ",");
 
-        System.out.println("task #2");
-
-        double[] secondArray = {1.57, 7.654, 9.986};
-        System.out.println(Arrays.toString(secondArray));
-        for (int i = secondArray.length - 1; i >= 0; i--) {
-            System.out.print(secondArray[i] + ",");
-            System.out.print(secondArray[i]);
+            counter--;
         }
-        System.out.println();
+        System.out.println(ArrayBool[0]);
 
-        System.out.println("task #3");
 
-        int[] Mas = new int[5];
-        for (int i = 0, n = 1; i < Mas.length; n = n + 2, i++) {
-            Mas[i] = n;
-        }
-        for (int i = Mas.length - 1; i >= 0; i--) {
-            System.out.print(Mas[i] + ",");
-            System.out.print(Mas[i]);
+        for (int i = 0; i < ArrayInt.length; i++) {
+            if (ArrayInt[i] % 2 != 0) ArrayInt[i]++;
+            System.out.println(ArrayInt[i] + ' ');
         }
 
 
-        System.out.println();
-
-        System.out.println("task #4");
-
-
-        System.out.println();
-        int[] Arr = {1, 2, 3, 4, 5, 10, 11, 12, 13, 14};
-
-        int temp;
-
-        for (int j = 1; j < Arr.length; j += 2) {
-            temp = Arr[j - 1];
-            Arr[j - 1] = Arr[j];
-            Arr[j] = temp;
-        }
-        System.out.print(Arrays.toString(Arr));
     }
+
 }
+
+
+
+
+
 
 
 
